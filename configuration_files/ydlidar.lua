@@ -5,7 +5,7 @@ options = {
     map_builder = MAP_BUILDER,
     trajectory_builder = TRAJECTORY_BUILDER,
     map_frame = "map",
-    tracking_frame = "base_link",
+    tracking_frame = "imu_link",
     published_frame = "odom",
     odom_frame = "odom",
     provide_odom_frame = false,
@@ -34,7 +34,7 @@ options = {
 TRAJECTORY_BUILDER_2D.min_range = 0.
 TRAJECTORY_BUILDER_2D.max_range = 10.
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
-TRAJECTORY_BUILDER_2D.use_imu_data = false
+TRAJECTORY_BUILDER_2D.use_imu_data = true
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 
 POSE_GRAPH.constraint_builder.min_score = 0.65
